@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 right_info">
+                    <p><i class="fa fa-map-marker"></i> 14rs only Per KM!</p>
+                </div>
+                <div class="col-md-7 col-sm-12 left_info">
+                    <ul>
+                        <li><i class="fa fa-mobile-alt"></i><a href="#">Ph : 6383662629</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">udayavisco@gmail.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <nav id='cssmenu'>
+                <div class="logo">
+                    <a href="#sectionForm"><h3>Supreme Cabs</h3></a>
+                </div>
+                <div id="head-mobile"></div>
+                <div class="button"></div>
+                <!-- <ul>
+                    <li class='active'><a href='#'>Home</a></li>
+                    <li><a href='#'>Services</a>
+                        <ul>
+                            <li><a href='#'>Services 1</a></li>
+                            <li><a href='#'>Services 2</a>
+                                <ul>
+                                    <li><a href='#'>Services 21</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href='#'>Services 3</a></li>
+                            <li><a href='#'>Services 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Reviews</a></li>
+                    <li><a href='#'>Special Offers</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><a href='#'>Book Online</a></li>
+                </ul> -->
+            </nav>
+        </div>
+    </div>
+</header>
+<div id="slider-home" class="carousel slide" data-ride="carousel" data-pause="false">
+    <ul class="carousel-indicators">
+        <li data-target="#slider-home" data-slide-to="0" class="active"></li>
+        <li data-target="#slider-home" data-slide-to="1"></li>
+        <li data-target="#slider-home" data-slide-to="2"></li>
+        <li data-target="#slider-home" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.ibb.co/JRrHmhv/shanghai.jpg" alt="Los Angeles">
+            <div class="carousel-caption">
+                <h3>Best Taxi Services</h3>
+                <p>Per Km 14rs only!</p>
+                <a class="btn" href="#sectionForm">Book Your Trip</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.ibb.co/JRrHmhv/shanghai.jpg" alt="Chicago">
+            <div class="carousel-caption">
+                <h3>Good Drivers</h3>
+                <p>Transform your look today with our special offers!</p>
+                <a class="btn" href="#">Book Your Trip</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.ibb.co/JRrHmhv/shanghai.jpg" alt="New York">
+            <div class="carousel-caption">
+                <h3>discover a new you!</h3>
+                <p>Transform your look today with our special offers!</p>
+                <a class="btn" href="#">Book Your Trip</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.ibb.co/JRrHmhv/shanghai.jpg" alt="New York">
+            <div class="carousel-caption">
+                <h3>discover a new you!</h3>
+                <p>Transform your look today with our special offers!</p>
+                <a class="btn" href="#">Book Your Trip</a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#slider-home" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#slider-home" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+  
+  <main>
+    <section id="confirmation"></section>
+  </main>
+
+  <div id="sectionForm" class="sectionForm">
+    <section class="booking-form">
+      <h2>Book Your Ride</h2>
+      <form action="slide.html" id="taxiForm">
+        <label class="form-label" for="pickup">Pickup Location:</label>
+        <input class="form-control" type="text" id="pickup" name="pickup" required>
+  
+        <label class="form-label" for="dropoff">Drop-off Location:</label>
+        <input class="form-control" type="text" id="dropoff" name="dropoff" required>
+  
+        <label class="form-label" for="date">Date:</label>
+        <input class="form-control" type="date" id="date" name="date" required>
+  
+        <label class="form-label" for="time">Time:</label>
+        <input class="form-control" type="time" id="time" name="time" required>
+  
+        <label class="form-label" for="rideType">Phone Number:</label>
+        <!-- <select id="rideType" name="rideType">
+          <option value="economy">Economy</option>
+          <option value="premium">Premium</option>
+          <option value="luxury">Luxury</option>
+        </select> -->
+        <input class="form-control" type="tel" id="rideType" name="rideType" required>
+
+  
+        <button class="btn btn-outline-success" type="submit">Book Now</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- CTA Block -->
+
+<section class="section_cta_block">
+  <div class="wraper">
+    <h2>Best Taxi Services</h2>
+    <p>In the back seat of a taxi, the world feels smaller and life seems to pause for a while.</p>
+    <a href="#sectionForm" class="cta01">Book Your Ride</a>
+  </div>
+</section>
+
+<!-- related pages -->
+
+<section class="section_cars">
+  <div class="wrapper">
+    <div class="related_heading">
+      <h2>Taxi Booking</h2>
+      <p>Taxis are where the best ideas, the boldest confessions, and the wildest dreams are often born</p>
+    </div>
+
+    <div class="cars_wrapper">
+      <a class="card_item_link" href="#sectionForm">
+        <div class="card_item">
+          <figure>
+            <img src="images/shiftDzire.jpg" alt="CanAm X3 2019 laranja" style="width:300px">
+          </figure>
+          <h5>Swift Dzire</h5>
+          <p>Per KM 14rs Only!.</p>
+          <a class="cta03" href="#sectionForm">Book Now</a>
+        </div>
+      </a>
+      <a href="#sectionForm">
+        <div class="card_item">
+          <figure>
+            <img src="images/innova.jpg" alt="CanAm X3 2019 laranja" style="width:300px">
+          </figure>
+          <h5>Innova</h5>
+          <p>Per KM 20rs Only!.</p>
+          <a class="cta03" href="#sectionForm">Book Now</a>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Wot -->
+
+<section class="wot">
+  <div class="wot_wraper">
+    <h2>Hello Customer</h2>
+    <h3> Far far away, behind the world</h3>
+    <p>Far far away, <strong>behind the world mountains</strong>, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    <!-- <figure><img src="https://www.rotax.com/files/userdata/rotax/News/Aktuelles/2020/Can-Am%20Side-by-Side%20Vehicle%20Wins%20the%20Dakar%20Rally%20for%20the%20Third%20Consecutive%20Year/82481980_1223223854544320_2845042888704786432_o.jpg" alt="UTV Canam no Rally Dakar 2019" width="60%">
+    </figure>
+    <small>Far far away, behind the world</small>
+    <hr>
+    <ul>
+      <li>Far far away, behind the world mountains</li>
+      <li>Far far away, behind the world mountains</li>
+    </ul> -->
+  </div>
+</section>
+
+  <div class="page-wrapper">
+    <div id="waterdrop"></div>
+    <footer>
+      <div class="footer-top">
+        <div class="pt-exebar">
+
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
+              <div class="widget footer_widget">
+                <h5 class="footer-title">Address</h5>
+                <div class="gem-contacts">
+                  <div class="gem-contacts-item gem-contacts-address">Udaya Kumar J,
+                    Mahalakshmi nagar
+                    Near NPR Mahal, Guduvancherry Pin 603202, chennai.
+                  </div>
+                  <div class="gem-contacts-item gem-contacts-phone"><i class="fa fa-phone" aria-hidden="true"></i> Phone: <a href="">+91-6383662629</a></div>
+
+                  <!-- <div class="gem-contacts-item gem-contacts-address mt-2">Reg. Office :<br> Doon House, D2/3,
+                    4th Floor, Chandra Tower, IDBI Bank Building
+                    Dimna Road, Mango, Jamshedpur-831012, Jharkhand.</div> -->
+                  <div class="gem-contacts-item gem-contacts-phone"><i class="fa fa-phone" aria-hidden="true"></i> Phone: <a>+91 6383662629</a></div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="widget footer_widget">
+                    <h5 class="footer-title">Recent Trips</h5>
+                    <ul class="posts  styled">
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="#">Tripathi.
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +91-6383662629</div>
+                        </div>
+                      </li>
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="#">Kerala.
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +91-6383662629</div>
+                        </div>
+                      </li>
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="">Madurai
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +91-6383662629</div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <!-- <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="widget">
+                    <h5 class="footer-title">Email Us</h5>
+                    <div class="textwidget">
+                      <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+
+                        <form method="post" class="wpcf7-form" novalidate="novalidate">
+
+                          <div class="contact-form-footer">
+                            <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your name"></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your email"></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+                            <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+              <div class="widget widget_gallery gallery-grid-4">
+                <h5 class="footer-title">Our Gallery</h5>
+                <ul class="magnific-image">
+
+                  <li><a class="magnific-anchor"><img src="images/gold-supercar-with-word-supercar-front_1340-32300.avif" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/pngtree-black-modern-stylish-sports-car-with-neon-lights-and-smoke-image_15673726.jpg" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.avif" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/gold-supercar-with-word-supercar-front_1340-32300.avif" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/pngtree-black-modern-stylish-sports-car-with-neon-lights-and-smoke-image_15673726.jpg" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.avif" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/gold-supercar-with-word-supercar-front_1340-32300.avif" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/pngtree-black-modern-stylish-sports-car-with-neon-lights-and-smoke-image_15673726.jpg" alt=""></a></li>
+                  <li><a class="magnific-anchor"><img src="images/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.avif" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+ <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
