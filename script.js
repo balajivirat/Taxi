@@ -51,27 +51,13 @@ fetch(url, {
     .then(data => {
         console.log('Success:', data);
         document.getElementById("pickup").value = '';
+        window.location.href = "slide.html";
     })
     .catch(error => {
         console.error('Error:', error);
     });
 
-    // try {
-    //   const response = await fetch('http://localhost:3000/send-email',{
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json'},
-    //     body: JSON.stringify({message})
-    //   });
-    //   if (response.ok) {
-    //     alert('Email Sent Successfully')
-    //   } else {
-    //     alert('Failed to sent Email')
-    //   }
-    // } catch (error) {
-    //   console.error('ERROR',error);
-    //   alert('An error occurred')
-    // }
-    window.location.href = "slide.html";
+    
   });
   
   function calculateFare(pickup, dropoff, rideType) {
